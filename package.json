@@ -4,6 +4,7 @@
   "description": "mini projet twitter par IceColdX302",
   "main": "app.js",
   "scripts": {
+    "start": "PORT=4000 nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "IceColdX302",
@@ -11,6 +12,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
     "pug": "^3.0.2"
   }
 }
