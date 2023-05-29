@@ -14,6 +14,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(index);
 
-
-
 app.listen(port);
