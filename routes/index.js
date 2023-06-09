@@ -1,6 +1,9 @@
 const router = require('express').Router();
+const api = require('./api')
 
-router.get('/home', (req, res) => {
+router.use('/api', api)
+
+router.get('/', (req, res) => {
     res.render('home')
 })
 
