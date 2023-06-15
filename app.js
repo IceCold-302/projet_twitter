@@ -3,7 +3,7 @@ const path = require('path');
 const morgan = require('morgan');
 const app = express();
 const routing = require('./routes');
-require('./database')
+require('../projet_twitter/database')
 const port = process.env.PORT || 3000;
 
 // views
