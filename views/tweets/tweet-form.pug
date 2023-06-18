@@ -1,0 +1,18 @@
+extends ../layout
+
+block content 
+    div(class='d-flex flex-row mx-auto content')
+        div(class='profile-container')
+        div(class='d-flex align-items-center justify-content-center')
+          form(class='card' method="post" action="/api/tweets/new" )
+            div(class='card-header') What's on your mind ?
+            div(class='card-body')
+                div(class='form-group')
+                    textarea(class="form-control" name="content", placeholder="Share your thoughts") 
+                if errors 
+                  ul
+                    each error in errors
+                      li(class="text-danger")= error
+                div(class="w-100")
+                    input(type="submit" value="send" class="btn btn-primary ml-auto d-block")
+
